@@ -24,6 +24,11 @@ export const metadata: Metadata = {
   title: SITE.titulo,
   description: SITE.descricao,
   alternates: { canonical: "/" },
+  robots: { index: true, follow: true, googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1 } },
+  // Código do Search Console (método "tag HTML"); só entra quando a variável existe
+  verification: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION
+    ? { google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION }
+    : undefined,
   openGraph: {
     type: "website",
     locale: "pt_BR",

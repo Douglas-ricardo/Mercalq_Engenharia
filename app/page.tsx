@@ -28,6 +28,26 @@ const jsonLd = [
     address: { "@type": "PostalAddress", addressLocality: "São Paulo", addressRegion: "SP", addressCountry: "BR" },
     sameAs: [SITE.instagramUrl],
     serviceType: "Vistoria técnica de recebimento de imóvel novo",
+    logo: `${SITE.url}/assets/logos/mercalq-logo-completo.png`,
+    inLanguage: "pt-BR",
+    knowsAbout: ["Vistoria de imóvel novo", "Laudo de vistoria", "ART", "NBR 16747", "NBR 17170"],
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: "Serviços",
+      itemListElement: [
+        { "@type": "Offer", itemOffered: { "@type": "Service", name: "Vistoria de recebimento de apartamento novo" } },
+        { "@type": "Offer", itemOffered: { "@type": "Service", name: "Vistoria de casa e imóvel na planta entregue" } },
+        { "@type": "Offer", itemOffered: { "@type": "Service", name: "Laudo técnico com registro fotográfico e ART" } },
+      ],
+    },
+    ...(SITE.engenheiro ? { employee: { "@type": "Person", name: SITE.engenheiro, jobTitle: "Engenheiro civil" } } : {}),
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: SITE.nome,
+    url: SITE.url,
+    inLanguage: "pt-BR",
   },
   {
     "@context": "https://schema.org",

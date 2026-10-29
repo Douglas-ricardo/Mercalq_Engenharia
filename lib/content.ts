@@ -136,4 +136,12 @@ export const FAQ = [
     q: "E se a construtora não corrigir os problemas?",
     a: "O laudo com registro fotográfico e ART documenta o estado do imóvel na entrega. Com ele você formaliza o pedido de reparo à construtora e, se ela não responder, tem uma prova técnica assinada por engenheiro para negociar ou recorrer aos órgãos de defesa do consumidor.",
   },
+  {
+    q: "O que é o laudo de vistoria de imóvel novo?",
+    a: "É o documento em que o engenheiro civil registra, com fotos e indicação da norma técnica aplicável, cada ocorrência encontrada no imóvel: acabamentos, instalações, caimentos, esquadrias e projeto. Ele acompanha a ART e serve de base para o pedido de reparo à construtora.",
+  },
+  {
+    q: "Quais normas a vistoria segue?",
+    a: "Usamos como referência a NBR 16747, da ABNT, que trata de inspeção predial, e a NBR 17170, que trata de garantias em edificações. Cada ocorrência do laudo cita a norma que embasa a cobrança.",
+  },
 ] as const;
