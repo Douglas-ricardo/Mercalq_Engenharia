@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800" role="img" aria-label="Porta de apartamento com chaves sendo entregues">
+  <defs>
+    <pattern id="d" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="12" cy="12" r="1" fill="#4e4946"/></pattern>
+  </defs>
+  <rect width="1200" height="800" fill="#312d2a"/>
+  <rect width="1200" height="800" fill="url(#d)"/>
+  <g fill="none" stroke="#d7d3d0" stroke-linecap="round" stroke-linejoin="round">
+    <!-- batente e porta -->
+    <path d="M430 700V110H770V700" stroke-width="10" stroke-linecap="square"/>
+    <rect x="460" y="140" width="280" height="560" stroke-width="3"/>
+    <rect x="500" y="190" width="200" height="200" stroke-width="1.5"/>
+    <rect x="500" y="430" width="200" height="220" stroke-width="1.5"/>
+    <path d="M380 700H820" stroke-width="6" stroke-linecap="square"/>
+    <!-- maçaneta -->
+    <circle cx="705" cy="420" r="9" stroke-width="2"/>
+    <path d="M705 420h-40" stroke-width="5"/>
+    <!-- chaves -->
+    <g stroke="#fc7824" stroke-width="3">
+      <circle cx="600" cy="520" r="34"/>
+      <path d="M624 544l70 70M664 584l14-14M684 604l14-14"/>
+      <circle cx="600" cy="520" r="10"/>
+      <path d="M570 548l-50 70M536 594l-14-10M526 610l-14-10"/>
+    </g>
+  </g>
+  <!-- cotas -->
+  <g stroke="#8d8987" stroke-width="1" fill="none">
+    <path d="M460 760H740M460 752v16M740 752v16"/>
+    <path d="M400 140V700M392 140h16M392 700h16"/>
+  </g>
+  <g fill="#bbb7b5" font-family="IBM Plex Mono, monospace" font-size="18">
+    <text x="600" y="790" text-anchor="middle">0,80</text>
+    <text x="384" y="426" text-anchor="end">2,10</text>
+  </g>
+  <rect x="460" y="70" width="120" height="4" fill="#d6751b"/>
+  <text x="600" y="78" fill="#bbb7b5" font-family="IBM Plex Mono, monospace" font-size="16">ENTREGA DAS CHAVES</text>
+</svg>
