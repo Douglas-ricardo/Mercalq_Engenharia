@@ -19,12 +19,17 @@ const plexMono = IBM_Plex_Mono({
   display: "swap",
 });
 
+/** Durante a validação com o cliente: NEXT_PUBLIC_NOINDEX=1 impede a indexação (meta e robots.txt). */
+const NOINDEX = process.env.NEXT_PUBLIC_NOINDEX === "1";
+
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
   title: SITE.titulo,
   description: SITE.descricao,
   alternates: { canonical: "/" },
-  robots: { index: true, follow: true, googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1 } },
+  robots: NOINDEX
+    ? { index: false, follow: false }
+    : { index: true, follow: true, googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1 } },
   // Código do Search Console (método "tag HTML"); só entra quando a variável existe
   verification: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION
     ? { google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION }
